@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,8 +9,22 @@ import {
 import { cn } from "@/utils/cn";
 import Typography from "./Typography";
 import { useRouter } from "next/navigation";
+const navItems = [
+  {
+    name: "Nav 1",
+    link: "#about",
+  },
+  {
+    name: "Nav 2",
+    link: "#experience",
+  },
+  {
+    name: "Nav 3",
+    link: "#project",
+  },
+];
 
-export const MobileNavbar = ({ navItems, className }) => {
+export const MobileNavbar = ({ className }) => {
   const router = useRouter();
   const { scrollYProgress } = useScroll();
 
@@ -19,7 +33,7 @@ export const MobileNavbar = ({ navItems, className }) => {
 
   const navigate = (link) => {
     router.push(link);
-    // setIsClick(true);
+    setIsClick(true);
   };
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -42,7 +56,17 @@ export const MobileNavbar = ({ navItems, className }) => {
       }
     }
   });
-  
+
+  //   reset isClick
+  useEffect(() => {
+    if (isClick) {
+      const timeoutId = setTimeout(() => {
+        setIsClick(false);
+      }, 1000); // Delay for 1 second
+
+      return () => clearTimeout(timeoutId); // Cleanup function to prevent memory leaks
+    }
+  }, [isClick]);
 
   return (
     <AnimatePresence mode="wait">
@@ -59,7 +83,7 @@ export const MobileNavbar = ({ navItems, className }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex w-full fixed h-12 inset-x-0 mx-auto border border-transparent    bg-aquamarine-700 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]  py-2  items-center justify-center space-x-4",
+          "flex w-full fixed h-12 inset-x-0 mx-auto border border-transparent    bg-aquamarine-700 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]  py-2  items-center justify-center space-x-10",
           className
         )}
       >
