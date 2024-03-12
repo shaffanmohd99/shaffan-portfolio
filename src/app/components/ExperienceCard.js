@@ -33,7 +33,7 @@ export default function ExperienceCard() {
     <>
       <div className="flex flex-col gap-4">
         {data.map((item, index) => (
-          <div className="border border-[#ccd6f6] p-4 rounded-lg">
+          <div key={index} className="border border-[#ccd6f6] p-4 rounded-lg">
             <div key={index} className=" flex lg:flex-row flex-col gap-4 ">
               <div className="lg:w-1/3 w-full">
                 <Typography variant="body" className="font-bold">
