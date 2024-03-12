@@ -25,7 +25,6 @@ export const MobileNavbar = ({ navItems, className }) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current - scrollYProgress.getPrevious();
-      console.log("🚀 ~ useMotionValueEvent ~ isClick:", isClick);
 
       if (scrollYProgress.get() < 0) {
         setVisible(false);
