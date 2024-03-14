@@ -9,6 +9,7 @@ import {
 import { cn } from "@/utils/cn";
 import Typography from "./Typography";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 const navItems = [
   {
     name: "Nav 1",
@@ -88,15 +89,17 @@ export const MobileNavbar = ({ className }) => {
         )}
       >
         {navItems.map((navItem, idx) => (
-          <div
+          <Link
             key={`link=${idx}`}
-            onClick={() => navigate(navItem.link)}
+            // onClick={() => navigate(navItem.link)}
+            href={navItem.link}
+            onClick={() => setIsClick(true)}
             className={cn("relative  items-center flex space-x-1 ")}
           >
             <Typography variant="p" className="font-bold hover:scale-110">
               {navItem.name}
             </Typography>
-          </div>
+          </Link>
         ))}
       </motion.div>
     </AnimatePresence>

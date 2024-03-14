@@ -1,6 +1,9 @@
+"use client";
+import { NavigationContext } from "@/context/navigationContext";
 import Typography from "./Typography";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { useContext } from "react";
 
 // const nav = [
 //   { value: "About", href: "#about" },
@@ -8,9 +11,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 //   { value: "Project", href: "#project" },
 // ];
 const nav = [
-  { value: "Nav 1", href: "#about" },
-  { value: "Nav 2", href: "#experience" },
-  { value: "Nav 3 ", href: "#project" },
+  { value: "Nav 1", href: "#about", id: "about" },
+  { value: "Nav 2", href: "#experience", id: "experience" },
+  { value: "Nav 3 ", href: "#project", id: "project" },
 ];
 const icons = [
   {
@@ -23,6 +26,8 @@ const icons = [
   },
 ];
 export default function NavBar() {
+  const { position } = useContext(NavigationContext);
+
   return (
     <div className="flex flex-col justify-between h-full">
       <div>
@@ -49,7 +54,11 @@ export default function NavBar() {
               <div className="  h-20  flex items-center cursor-pointer ">
                 <Typography
                   variant="subtitle"
-                  className="pl-4 h-full flex items-center border-l-8 transition duration-400 ease-in-out border-aquamarine-300 hover:hover:text-aquamarine-800 hover:border-aquamarine-800 "
+                  className={`pl-4 h-full flex items-center border-l-8 transition duration-500 ease-in-out  hover:hover:text-aquamarine-800 hover:border-aquamarine-800 ${
+                    position === item.id
+                      ? "text-aquamarine-800 border-aquamarine-800"
+                      : "border-aquamarine-300"
+                  }`}
                 >
                   {item.value}
                 </Typography>

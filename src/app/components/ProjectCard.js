@@ -37,6 +37,7 @@ export default function ProjectCard() {
                   src={item.image}
                   fill={true}
                   className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition duration-300 ease-in-out"
+                  alt={`image for ${item.title}`}
                 />
               </div>
               <div className="lg:w-2/3 w-full">
