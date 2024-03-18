@@ -2,18 +2,20 @@ import Image from "next/image";
 import Typography from "./Typography";
 const data = [
   {
-    title: "Lorem Ipsum",
-    image: "/cat.jpg",
+    title: "Wedding Invitation Web App",
+    image: "/wedding.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit",
-    skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+      "I developed a wedding invitation application that simplifies RSVP management for my upcoming wedding. With this app, users can effortlessly submit their attendance, streamlining the RSVP process. As an admin, I have the ability to log in and efficiently track RSVPs, ensuring seamless coordination for the event. This full-stack web application was built using Next.js for the frontend and backend, with MongoDB serving as the database. It's deployed on Vercel, providing a reliable and accessible platform for managing wedding invitations.",
+    skills: ["Next JS", "MongoDB", "Vercel", "Tailwind UI"],
+    link: "https://loveshaffanbasyirah.com/",
   },
   {
-    title: "Lorem Ipsum",
-    image: "/cat.jpg",
+    title: "Portfolio V1",
+    image: "/portfolio.png",
+    imageType: "contain",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit",
-    skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+      "This personal portfolio represents my initial attempt into web development, serving as a nostalgic reminder of my journey and growth in the field. Crafted with HTML, CSS, and JavaScript, this first version showcases my early efforts in building a digital presence. Deployed through GitHub Pages, it stands as a testament to my initial steps in the world of web development and serves as a foundation for future iterations.",
+    skills: ["HTML", "CSS", "Javascript"],
   },
 ];
 export default function ProjectCard() {
@@ -21,8 +23,10 @@ export default function ProjectCard() {
     <>
       <div className="flex flex-col gap-4">
         {data.map((item, index) => (
-          <div
+          <a
             key={index}
+            href={item.link}
+            target="_blank"
             className=" group border border-colorText p-4 rounded-lg cursor-pointer hover:border-aquamarine-300 hover:bg-blue-zodiac-600/10 transition duration-300 ease-in-out"
           >
             <Typography
@@ -36,7 +40,9 @@ export default function ProjectCard() {
                 <Image
                   src={item.image}
                   fill={true}
-                  className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition duration-300 ease-in-out"
+                  className={`${
+                    item.imageType ? "object-contain" : "object-cover"
+                  } opacity-90 group-hover:opacity-100 group-hover:scale-110 transition duration-300 ease-in-out`}
                   alt={`image for ${item.title}`}
                 />
               </div>
@@ -57,7 +63,7 @@ export default function ProjectCard() {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </>

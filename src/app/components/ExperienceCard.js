@@ -1,33 +1,49 @@
 import Typography from "./Typography";
 
-// const data = [
-//   {
-//     position: "Sofware Engineer",
-//     company: "Invoke Solutions ",
-//     duration: "Aug 2023 - Present",
-//     description:
-//       "Specialize in crafting engaging and seamless user experiences by building robust frontend interfaces. I actively collaborate with cross-functional teams to integrate new APIs and contribute to designing user flows and interfaces. I thrive on staying at the forefront of industry trends, consistently learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
-//   },
-// ];
-
 const data = [
   {
-    position: "Position here",
-    company: "Company here",
+    position: "Frontend Developer",
+    company: "Invoke Solutions ",
     duration: "Aug 2023 - Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in",
-    skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+      "Specialize in crafting engaging and seamless user experiences by building robust frontend interfaces. I actively collaborate with cross-functional teams to integrate new APIs and contribute to designing user flows and interfaces. I thrive on staying at the forefront of industry trends, consistently learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
+    skills: [
+      "React JS",
+      "Next JS",
+      "Vercel",
+      "Tailwind CSS",
+      "Material UI",
+      "Wordpress",
+    ],
   },
   {
-    position: "Position here",
-    company: "Company here",
-    duration: "Aug 2023 - Present",
+    position: "Product Management Intern",
+    company: "Celcom Axiata Berhad",
+    duration: "Jul 2021 - Sep 2021",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in",
-    skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+      "Worked closely with different teams like to ensure that our products are the best they can be. From analyzing market trends to coordinating product launches, I'm involved in various aspects of the product lifecycle, making sure our products meet the needs of our customers while aligning with the company's goals.",
+    skills: ["Project management", "Excel", "Jira", "Problem solving"],
   },
 ];
+
+// const data = [
+//   {
+//     position: "Position here",
+//     company: "Company here",
+//     duration: "Aug 2023 - Present",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in",
+//     skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+//   },
+//   {
+//     position: "Position here",
+//     company: "Company here",
+//     duration: "Aug 2023 - Present",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in",
+//     skills: ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
+//   },
+// ];
 export default function ExperienceCard() {
   return (
     <>

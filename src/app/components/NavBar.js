@@ -5,15 +5,11 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { useContext } from "react";
 
-// const nav = [
-//   { value: "About", href: "#about" },
-//   { value: "Experience", href: "#experience" },
-//   { value: "Project", href: "#project" },
-// ];
+
 const nav = [
-  { value: "Nav 1", href: "#about", id: "about" },
-  { value: "Nav 2", href: "#experience", id: "experience" },
-  { value: "Nav 3 ", href: "#project", id: "project" },
+  { value: "About", href: "#about", id: "about" },
+  { value: "Experience", href: "#experience", id: "experience" },
+  { value: "Project", href: "#project", id: "project" },
 ];
 const icons = [
   {
@@ -32,20 +28,12 @@ export default function NavBar() {
     <div className="flex flex-col justify-between h-full">
       <div>
         <div className="flex flex-col gap-2">
-          {/* <Typography variant="title">Shaffan Mohd</Typography> */}
-          <Typography variant="title">Title 1 </Typography>
-          {/* <Typography variant="subtitle">Frontend developer</Typography> */}
-          <Typography variant="subtitle">title 2</Typography>
-          {/* <Typography variant="p">
-                        Passionate front-end engineer with a keen eye for design,
-                        transforming ideas into seamless and visually appealing
-                        digital experiences
-                      </Typography> */}
+          <Typography variant="title">Shaffan Mohd</Typography>
+          <Typography variant="subtitle">Software Developer</Typography>
           <Typography variant="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Passionate software developer with a keen eye for design,
+            transforming ideas into seamless and visually appealing digital
+            experiences
           </Typography>
         </div>
         <div className="mt-8">
