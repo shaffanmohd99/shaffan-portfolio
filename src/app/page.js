@@ -26,6 +26,15 @@ export default function Home() {
           About
         </Typography>
         <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1 lg:hidden">
+            <Typography variant="title">Shaffan Mohd</Typography>
+            <Typography variant="subtitle">Software Developer</Typography>
+            <Typography variant="p">
+              Passionate software developer with a keen eye for design,
+              transforming ideas into seamless and visually appealing digital
+              experiences
+            </Typography>
+          </div>
           {text.map((item, index) => (
             <Typography key={index} variant="p">
               {item}
