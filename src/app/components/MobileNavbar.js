@@ -12,15 +12,15 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 const navItems = [
   {
-    name: "Nav 1",
+    name: "About",
     link: "#about",
   },
   {
-    name: "Nav 2",
+    name: "Experience",
     link: "#experience",
   },
   {
-    name: "Nav 3",
+    name: "Projects",
     link: "#project",
   },
 ];
