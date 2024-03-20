@@ -16,6 +16,7 @@ const data = [
     description:
       "This personal portfolio represents my initial attempt into web development, serving as a nostalgic reminder of my journey and growth in the field. Crafted with HTML, CSS, and JavaScript, this first version showcases my early efforts in building a digital presence. Deployed through GitHub Pages, it stands as a testament to my initial steps in the world of web development and serves as a foundation for future iterations.",
     skills: ["HTML", "CSS", "Javascript"],
+    link: "https://shaffanmohd99.github.io/",
   },
 ];
 export default function ProjectCard() {
