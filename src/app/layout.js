@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import { MobileNavbar } from "./components/MobileNavbar";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
 
               <div className="w-full py-16 lg:ml-[400px]  px-4 lg:px-0">
                 {children}
+                <Analytics />
               </div>
             </div>
           </div>
