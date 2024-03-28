@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { useContext } from "react";
 
-
 const nav = [
   { value: "About", href: "#about", id: "about" },
   { value: "Experience", href: "#experience", id: "experience" },
@@ -28,8 +27,18 @@ export default function NavBar() {
     <div className="flex flex-col justify-between h-full">
       <div>
         <div className="flex flex-col gap-2">
-          <Typography variant="title">Shaffan Mohd</Typography>
-          <Typography variant="subtitle">Software Developer</Typography>
+          <Typography
+            variant="title"
+            className="bg-gradient-to-r from-aquamarine-300 to-colorText bg-clip-text text-transparent"
+          >
+            Shaffan Mohd
+          </Typography>
+          <Typography
+            variant="subtitle"
+            className="bg-gradient-to-r from-aquamarine-300 to-colorText bg-clip-text text-transparent"
+          >
+            Software Developer
+          </Typography>
           <Typography variant="p">
             Passionate software developer with a keen eye for design,
             transforming ideas into seamless and visually appealing digital
@@ -42,7 +51,7 @@ export default function NavBar() {
               <div className="  h-20  flex items-center cursor-pointer ">
                 <Typography
                   variant="subtitle"
-                  className={`pl-4 h-full flex items-center border-l-8 transition duration-500 ease-in-out  hover:hover:text-aquamarine-800 hover:border-aquamarine-800 ${
+                  className={`pl-4 h-full flex items-center border-l-8 transition duration-500 ease-in-out  hover:text-aquamarine-600 hover:border-aquamarine-600 ${
                     position === item.id
                       ? "text-aquamarine-800 border-aquamarine-800"
                       : "border-aquamarine-300"
