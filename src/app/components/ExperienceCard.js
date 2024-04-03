@@ -6,7 +6,7 @@ const data = [
     company: "Invoke Solutions ",
     duration: "Aug 2023 - Present",
     description:
-      "Specialize in crafting engaging and seamless user experiences by building robust frontend interfaces. I actively collaborate with cross-functional teams to integrate new APIs and contribute to designing user flows and interfaces. I thrive on staying at the forefront of industry trends, consistently learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
+      "Specializing in developing compelling and intuitive user experiences, thriving on continuous learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
     skills: [
       "React JS",
       "Next JS",
@@ -21,7 +21,7 @@ const data = [
     company: "Celcom Axiata Berhad",
     duration: "Jul 2021 - Sep 2021",
     description:
-      "Worked closely with different teams like to ensure that our products are the best they can be. From analyzing market trends to coordinating product launches, I'm involved in various aspects of the product lifecycle, making sure our products meet the needs of our customers while aligning with the company's goals.",
+      "Collaborated with diverse teams to optimize our products, from analyzing market trends to coordinating successful product launches. Engaged in all stages of the product life cycle, ensuring our offerings not only meet customer needs but also align with company objectives.",
     skills: ["Project management", "Excel", "Jira", "Problem solving"],
   },
 ];

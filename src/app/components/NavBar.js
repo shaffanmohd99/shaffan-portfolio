@@ -40,9 +40,8 @@ export default function NavBar() {
             Software Developer
           </Typography>
           <Typography variant="p">
-            Passionate software developer with a keen eye for design,
-            transforming ideas into seamless and visually appealing digital
-            experiences
+            Passionate software developer with a passion for crafting seamless
+            user experience.
           </Typography>
         </div>
         <div className="mt-8">

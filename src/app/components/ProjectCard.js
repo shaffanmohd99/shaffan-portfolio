@@ -5,7 +5,7 @@ const data = [
     title: "Wedding Invitation Web App",
     image: "/wedding.png",
     description:
-      "I developed a wedding invitation application that simplifies RSVP management for my upcoming wedding. With this app, users can effortlessly submit their attendance, streamlining the RSVP process. As an admin, I have the ability to log in and efficiently track RSVPs, ensuring seamless coordination for the event. This full-stack web application was built using Next.js for the frontend and backend, with MongoDB serving as the database. It's deployed on Vercel, providing a reliable and accessible platform for managing wedding invitations.",
+      "Developed my own wedding invitation application that streamlines RSVP management. With this app, users can submit their attendance and event details will be auto-emailed. As admin, I oversee RSVP tracking for seamless event coordination. This full-stack web application was built using Next.js, MongoDB for the database and was deployed on Vercel.",
     skills: ["Next JS", "MongoDB", "Vercel", "Tailwind UI"],
     link: "https://loveshaffanbasyirah.com/",
   },
