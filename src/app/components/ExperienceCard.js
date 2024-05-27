@@ -4,7 +4,7 @@ const data = [
   {
     position: "Frontend Developer",
     company: "Invoke Solutions ",
-    duration: "Aug 2023 - Present",
+    duration: "Aug 2022 - Present",
     description:
       "Specializing in developing compelling and intuitive user experiences, thriving on continuous learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
     skills: [
