@@ -10,6 +10,30 @@ const data = [
     link: "https://loveshaffanbasyirah.com/",
   },
   {
+    title: "Recipe finder",
+    image: "/recipe.png",
+    description:
+      "I created a mini-project to enhance my TypeScript skills, leveraging the ShadCN component library for quick and efficient UI development. For the API, I integrated the Spoonacular API to handle recipe data, and I implemented a search feature to allow users to easily explore different recipes.",
+    skills: ["React JS", "Typescript", "Vercel", "Tailwind UI", "Shadcn/ui"],
+    link: "https://recipe-finder-three-delta.vercel.app/",
+  },
+  {
+    title: "Wedding Invitation Web App",
+    image: "/wedding.png",
+    description:
+      "Developed my own wedding invitation application that streamlines RSVP management. With this app, users can submit their attendance and event details will be auto-emailed. As admin, I oversee RSVP tracking for seamless event coordination. This full-stack web application was built using Next.js, MongoDB for the database and was deployed on Vercel.",
+    skills: ["Next JS", "MongoDB", "Vercel", "Tailwind UI"],
+    link: "https://loveshaffanbasyirah.com/",
+  },
+  {
+    title: "Wedding Invitation Web App",
+    image: "/wedding.png",
+    description:
+      "Developed my own wedding invitation application that streamlines RSVP management. With this app, users can submit their attendance and event details will be auto-emailed. As admin, I oversee RSVP tracking for seamless event coordination. This full-stack web application was built using Next.js, MongoDB for the database and was deployed on Vercel.",
+    skills: ["Next JS", "MongoDB", "Vercel", "Tailwind UI"],
+    link: "https://loveshaffanbasyirah.com/",
+  },
+  {
     title: "Portfolio V1",
     image: "/portfolio.png",
     imageType: "contain",
