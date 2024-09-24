@@ -18,15 +18,6 @@ const data = [
     link: "https://recipe-finder-three-delta.vercel.app/",
   },
   {
-    title: "Wedding Invitation Web App",
-    image: "/wedding.png",
-    description:
-      "Developed my own wedding invitation application that streamlines RSVP management. With this app, users can submit their attendance and event details will be auto-emailed. As admin, I oversee RSVP tracking for seamless event coordination. This full-stack web application was built using Next.js, MongoDB for the database and was deployed on Vercel.",
-    skills: ["Next JS", "MongoDB", "Vercel", "Tailwind UI"],
-    link: "https://loveshaffanbasyirah.com/",
-  },
-
-  {
     title: "Portfolio V1",
     image: "/portfolio.png",
     imageType: "contain",
