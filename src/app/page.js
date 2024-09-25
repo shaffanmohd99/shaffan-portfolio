@@ -51,21 +51,21 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div id="experience" ref={refCallback} className="   py-8 mb-24">
-        <Typography variant="subtitle" className="text-aquamarine-300 mb-10">
-          Experience
-        </Typography>
-        <div>
-          <ExperienceCard />
+      <div className="py-8 mb-24">
+        <div id="experience" ref={refCallback}>
+          <Typography variant="subtitle" className="text-aquamarine-300 mb-10">
+            Experience
+          </Typography>
         </div>
+        <ExperienceCard />
       </div>
-      <div id="project" ref={refCallback} className=" py-8 mb-24">
-        <Typography variant="subtitle" className="text-aquamarine-300 mb-10">
-          Projects
-        </Typography>
-        <div>
-          <ProjectCard />
+      <div className="py-8 mb-24">
+        <div id="project" ref={refCallback}>
+          <Typography variant="subtitle" className="text-aquamarine-300 mb-10">
+            Projects
+          </Typography>
         </div>
+        <ProjectCard />
       </div>
     </div>
   );
