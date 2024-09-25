@@ -13,11 +13,11 @@ const nav = [
 const icons = [
   {
     icon: <FaGithub />,
-    link: "https://github.com/",
+    link: "https://github.com/shaffanmohd99",
   },
   {
     icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/shaffanmohd/",
   },
 ];
 export default function NavBar() {
