@@ -2,8 +2,16 @@ import Typography from "./Typography";
 
 const data = [
   {
+    position: "Frontend Developer Analyst",
+    company: "Accenture Technology",
+    duration: "Aug 2024 - now",
+    description:
+      "Frontend engineer specializing in creating user-centric web applications for a major banking client",
+    skills: ["React JS", "Next JS", "Angular", "Node JS"],
+  },
+  {
     position: "Frontend Developer",
-    company: "Invoke Solutions ",
+    company: "Invoke Solutions",
     duration: "Aug 2022 - Jul 2024",
     description:
       "Specializing in developing compelling and intuitive user experiences, thriving on continuous learning and implementing new technologies to enhance the overall functionality and aesthetics of web applications.",
