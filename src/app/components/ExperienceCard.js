@@ -6,7 +6,7 @@ const data = [
     company: "Accenture Technology",
     duration: "Aug 2024 - now",
     description:
-      "Fullstack developer specializing in building scalable, user-centric web applications for a major banking client in Malaysia",
+      "Fullstack developer specializing in building scalable, user-centric web applications for a major banking client in Malaysia.",
     skills: ["React JS", "Next JS", "Nest JS", "Typescript"],
   },
   {
