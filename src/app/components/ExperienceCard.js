@@ -2,12 +2,12 @@ import Typography from "./Typography";
 
 const data = [
   {
-    position: "Frontend Developer Analyst",
+    position: "Packaged App Development Analyst",
     company: "Accenture Technology",
     duration: "Aug 2024 - now",
     description:
-      "Frontend engineer specializing in creating user-centric web applications for a major banking client",
-    skills: ["React JS", "Next JS", "Angular", "Node JS"],
+      "Fullstack developer specializing in building scalable, user-centric web applications for a major banking client in Malaysia",
+    skills: ["React JS", "Next JS", "Nest JS", "Typescript"],
   },
   {
     position: "Frontend Developer",
